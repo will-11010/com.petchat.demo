@@ -10,4 +10,19 @@ public class HomeController {
     public String home() {
         return "home";
     }
+
+    @GetMapping("/sobre")
+    public String sobre() {
+        return "sobre";
+    }
+
+    @GetMapping("/cadastro")
+    public String cadastro() {
+        return "cadastro";
+    }
+
+    @GetMapping("/contato")
+    public String contato() {
+        return "contato";
+    }
 }

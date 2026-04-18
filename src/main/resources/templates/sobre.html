@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetChat - Sobre</title>
+    <link rel="icon" type="image/svg+xml" th:href="@{/favicon.svg}">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #764ba2;
+        }
+
+        .logo span {
+            color: #667eea;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #764ba2;
+        }
+
+        .logo-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .about-section {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 3rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .about-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .about-header .icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-header h1 {
+            font-size: 2.2rem;
+            color: #764ba2;
+            margin-bottom: 0.5rem;
+        }
+
+        .about-header p.subtitle {
+            font-size: 1.1rem;
+            color: #888;
+        }
+
+        .about-content h2 {
+            font-size: 1.4rem;
+            color: #764ba2;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .about-content p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+        }
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .tech-item {
+            background: #f0ecf7;
+            color: #764ba2;
+            padding: 0.4rem 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a th:href="@{/}" class="logo-link">
+        <div class="logo">Pet<span>Chat</span></div>
+    </a>
+    <ul>
+        <li><a th:href="@{/}">Inicio</a></li>
+        <li><a th:href="@{/sobre}" class="active">Sobre</a></li>
+        <li><a th:href="@{/contato}">Contato</a></li>
+        <li><a th:href="@{/cadastro}">Cadastro</a></li>
+    </ul>
+</nav>
+
+<section class="about-section">
+    <div class="about-header">
+        <div class="icon">🐶</div>
+        <h1>Sobre o PetChat</h1>
+        <p class="subtitle">Conectando pets e seus donos</p>
+    </div>
+
+    <div class="about-content">
+        <h2>Nossa ideia</h2>
+        <p>
+            O PetChat nasceu da vontade de criar um espaço digital pensado especialmente para os pets e seus tutores.
+            A ideia é construir uma plataforma onde os animais de estimação sejam os protagonistas — um lugar para
+            compartilhar momentos, trocar experiências e fortalecer a comunidade pet.
+        </p>
+
+        <h2>Projeto pessoal de estudos</h2>
+        <p>
+            Por enquanto, o PetChat é um projeto pessoal voltado para estudos e aprendizado.
+            Ele está sendo desenvolvido como forma de praticar e aprofundar conhecimentos em desenvolvimento web,
+            explorando tecnologias modernas e boas práticas de engenharia de software.
+        </p>
+        <p>
+            Embora ainda não esteja em produção, cada funcionalidade é pensada com carinho — tanto pelo
+            aprendizado técnico quanto pelo amor aos bichinhos.
+        </p>
+
+        <h2>Tecnologias utilizadas</h2>
+        <div class="tech-list">
+            <span class="tech-item">Java</span>
+            <span class="tech-item">Spring Boot</span>
+            <span class="tech-item">Thymeleaf</span>
+            <span class="tech-item">Maven</span>
+        </div>
+
+        <span class="badge">Em desenvolvimento</span>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 PetChat. Feito com ❤️ para todos os pets.</p>
+</footer>
+
+</body>
+</html>

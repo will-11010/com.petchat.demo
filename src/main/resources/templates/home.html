@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetChat - Rede Social para Pets</title>
+    <link rel="icon" type="image/svg+xml" th:href="@{/favicon.svg}">
     <style>
         * {
             margin: 0;
@@ -52,6 +53,11 @@
 
         nav a:hover {
             color: #764ba2;
+        }
+
+        .logo-link {
+            text-decoration: none;
+            color: inherit;
         }
 
         .hero {
@@ -160,11 +166,14 @@
 <body>
 
 <nav>
-    <div class="logo">Pet<span>Chat</span></div>
+    <a th:href="@{/}" class="logo-link">
+        <div class="logo">Pet<span>Chat</span></div>
+    </a>
     <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a th:href="@{/}">Inicio</a></li>
+        <li><a th:href="@{/sobre}">Sobre</a></li>
+        <li><a th:href="@{/contato}">Contato</a></li>
+        <li><a th:href="@{/cadastro}">Cadastro</a></li>
     </ul>
 </nav>
 
@@ -173,8 +182,8 @@
     <h1>Bem-vindo ao PetChat!</h1>
     <p>A rede social onde seu pet faz amigos, compartilha aventuras e se conecta com outros bichinhos.</p>
     <div>
-        <a href="#" class="btn btn-primary">Cadastre seu Pet</a>
-        <a href="#" class="btn btn-secondary">Saiba Mais</a>
+        <a th:href="@{/cadastro}" class="btn btn-primary">Cadastre seu Pet</a>
+        <a th:href="@{/sobre}" class="btn btn-secondary">Saiba Mais</a>
     </div>
 </section>
 
