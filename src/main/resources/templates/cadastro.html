@@ -7,6 +7,7 @@
     <link rel="icon" type="image/svg+xml" th:href="@{/favicon.svg}">
     <link rel="stylesheet" th:href="@{/css/common.css}">
     <link rel="stylesheet" th:href="@{/css/cadastro.css}">
+    <link rel="stylesheet" th:href="@{/css/modal.css}">
 </head>
 <body>
 
@@ -63,18 +64,12 @@
     </div>
 </section>
 
-<div class="modal-overlay" id="modalOverlay">
-    <div class="modal">
-        <div class="modal-icon">🚧</div>
-        <h2>Em construção!</h2>
-        <p>A funcionalidade de cadastro ainda está sendo desenvolvida. Fique ligado, em breve ela estará disponível!</p>
-        <button class="modal-btn" id="modalClose">Entendi</button>
-    </div>
-</div>
+<div th:replace="~{fragments/modal :: modal}"></div>
 
 <footer th:replace="~{fragments/footer :: footer}"></footer>
 
 <script th:src="@{/js/cadastro.js}"></script>
+<script th:src="@{/js/modal.js}"></script>
 
 </body>
 </html>
