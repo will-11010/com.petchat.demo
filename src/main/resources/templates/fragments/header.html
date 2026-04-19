@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<nav th:fragment="nav(activePage)">
+    <a th:href="@{/}" class="logo-link">
+        <div class="logo">Pet<span>Chat</span></div>
+    </a>
+    <ul>
+        <li><a th:href="@{/}" th:classappend="${activePage == 'home'} ? 'active'">Inicio</a></li>
+        <li><a th:href="@{/sobre}" th:classappend="${activePage == 'sobre'} ? 'active'">Sobre</a></li>
+        <li><a th:href="@{/contato}" th:classappend="${activePage == 'contato'} ? 'active'">Contato</a></li>
+        <li><a th:href="@{/cadastro}" th:classappend="${activePage == 'cadastro'} ? 'active'">Cadastro</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>

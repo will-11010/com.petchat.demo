@@ -1,0 +1,109 @@
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    padding: 3rem;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.contact-header .icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.contact-header h1 {
+    font-size: 2rem;
+    color: #764ba2;
+    margin-bottom: 0.5rem;
+}
+
+.contact-header p {
+    color: #888;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1.2rem 1.5rem;
+    background: #f8f6fc;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.social-link:hover.instagram {
+    background: linear-gradient(135deg, #fdf497 0%, #fd5949 30%, #d6249f 60%, #285aeb 100%);
+    color: white;
+}
+
+.social-link:hover.linkedin {
+    background: #0077b5;
+    color: white;
+}
+
+.social-link:hover.github {
+    background: #24292e;
+    color: white;
+}
+
+.social-link:hover .social-handle {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.social-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+    width: 2.5rem;
+    text-align: center;
+}
+
+.social-icon svg {
+    width: 2rem;
+    height: 2rem;
+    fill: currentColor;
+    vertical-align: middle;
+}
+
+.social-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.social-handle {
+    font-size: 0.85rem;
+    color: #999;
+    transition: color 0.3s;
+}
