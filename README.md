@@ -28,12 +28,9 @@ src/
 │       │   ├── css/                      # Stylesheets (common + per page)
 │       │   └── js/                       # JavaScript (per page)
 │       └── templates/
-│           ├── fragments/
-│           │   └── header.html           # Shared navigation bar
-│           ├── home.html
-│           ├── sobre.html
-│           ├── contato.html
-│           └── cadastro.html
+│           ├── fragments/                # Shared navigation bar
+│           │
+│           ├── pages.html
 └── test/
     └── java/com/petchat/demo/
         └── DemoApplicationTests.java
